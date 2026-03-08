@@ -1,0 +1,47 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-tech-illustration",
+      "description": "Modern digital technology illustration showing connectivity and growth.",
+      "imageUrl": "https://picsum.photos/seed/bizgrow-hero/1200/800",
+      "imageHint": "digital technology illustration"
+    },
+    {
+      "id": "restaurant-success",
+      "description": "A thriving local restaurant with customers using digital menus.",
+      "imageUrl": "https://picsum.photos/seed/bizgrow-rest/600/400",
+      "imageHint": "modern restaurant interior"
+    },
+    {
+      "id": "salon-marketing",
+      "description": "A stylish hair salon with a modern aesthetic.",
+      "imageUrl": "https://picsum.photos/seed/bizgrow-salon/600/400",
+      "imageHint": "hair salon interior"
+    },
+    {
+      "id": "real-estate-video",
+      "description": "Luxury home interior representing real estate digital tours.",
+      "imageUrl": "https://picsum.photos/seed/bizgrow-re/600/400",
+      "imageHint": "luxury home interior"
+    },
+    {
+      "id": "retail-growth",
+      "description": "Local boutique shop with busy customers.",
+      "imageUrl": "https://picsum.photos/seed/bizgrow-retail/600/400",
+      "imageHint": "boutique shop interior"
+    },
+    {
+      "id": "blog-seo-tips",
+      "description": "Abstract representation of SEO and data growth.",
+      "imageUrl": "https://picsum.photos/seed/bizgrow-seo/800/500",
+      "imageHint": "data analysis graph"
+    },
+    {
+      "id": "blog-success-story",
+      "description": "Happy small business owner in their shop.",
+      "imageUrl": "https://picsum.photos/seed/bizgrow-owner/800/500",
+      "imageHint": "smiling business owner"
+    }
+  ]
+}
