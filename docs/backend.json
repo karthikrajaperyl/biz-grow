@@ -1,0 +1,95 @@
+{
+    "entities": {
+        "AuditReport": {
+            "title": "Audit Report",
+            "description": "A generated digital audit report for a local business.",
+            "type": "object",
+            "properties": {
+                "businessName": {
+                    "type": "string",
+                    "description": "The name of the business audited."
+                },
+                "businessType": {
+                    "type": "string",
+                    "description": "The category of the business."
+                },
+                "summary": {
+                    "type": "string",
+                    "description": "Concise summary of digital status."
+                },
+                "strengths": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of current digital strengths."
+                },
+                "areasForImprovement": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of recommendations for growth."
+                },
+                "timestamp": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "When the audit was generated."
+                }
+            },
+            "required": [
+                "businessName",
+                "summary",
+                "timestamp"
+            ]
+        },
+        "Lead": {
+            "title": "Lead",
+            "description": "Contact information for a potential customer.",
+            "type": "object",
+            "properties": {
+                "businessName": {
+                    "type": "string"
+                },
+                "contactName": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string",
+                    "format": "email"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "new",
+                        "contacted",
+                        "qualified",
+                        "closed"
+                    ]
+                }
+            },
+            "required": [
+                "businessName",
+                "status"
+            ]
+        }
+    },
+    "auth": {
+        "providers": [
+            "google.com"
+        ]
+    },
+    "firestore": {
+        "/auditReports/{reportId}": {
+            "schema": "AuditReport",
+            "description": "Collection of generated digital audits."
+        },
+        "/leads/{leadId}": {
+            "schema": "Lead",
+            "description": "Collection of business leads and contacts."
+        }
+    }
+}
